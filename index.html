@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mini Wordle</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
-
-<!-- Confetti library -->
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-
+    <!-- Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
+
 <body>
 
-<h1>Wordle</h1>
+<h1 class="title">WORDLE</h1>
 
-<div id="grid" class="grid"></div>
+<div id="board"></div>
 
-<input type="text" id="guessInput" maxlength="5" placeholder="ENTER 5 LETTER WORD">
-<button onclick="submitGuess()">Submit</button>
+<input type="text" id="guess-input" maxlength="5" placeholder="TYPE 5 LETTER WORD">
+<button id="guess-button">GUESS</button>
 
 </body>
 </html>
